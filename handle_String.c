@@ -7,8 +7,7 @@
  */
 
 int String_handler(va_list l)
-et number
-
+{
 	register short len = 0;
 	char *res, *s = va_arg(l, char *);
 	int count;
@@ -69,4 +68,3 @@ char *convert(unsigned long int num, int base, int lowercase)
 
 	return (ptr);
 }
-

@@ -7,7 +7,7 @@
 #include <stdlib.h>
 #include <stdarg.h>
 #include <limits.h>
-
+#include <stddef.h>
 
 #define NULL_STRING "(null)"
 #define NUL '\0'
