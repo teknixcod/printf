@@ -27,6 +27,6 @@ int pointer_handler(va_list val)
 	a = (unsigned long int)p;
 	_putchar('0');
 	_putchar('x');
-	b = print_hex_aux(a);
+	b = hexadecimal_handler(a);
 	return (b + 2);
 }

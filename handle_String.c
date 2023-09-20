@@ -2,7 +2,7 @@
 
 /**
  * String_handler - print exclusuives string.
- * @val: argumen t.
+ * @l: argument.
  * Return: the length of the string.
  */
 
@@ -38,7 +38,7 @@ et number
  * Return: true or false
  */
 
-int isNonAlphaNumeric(char c) 
+int isNonAlphaNumeric(char c)
 {
 	return ((c > 0 && c < 32) || c >= 127);
 }
