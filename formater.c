@@ -40,7 +40,7 @@ int format_reciever(const char *format, conver_t f_list[], va_list arg_list)
 				else
 					return (-1);
 			}
-			i = y + 1;
+			y += 1;
 		}
 		else
 		{
@@ -50,4 +50,3 @@ int format_reciever(const char *format, conver_t f_list[], va_list arg_list)
 	}
 	return (printed_chars);
 }
-
