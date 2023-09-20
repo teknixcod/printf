@@ -21,8 +21,8 @@
  */
 typedef struct convert
 {
-    char *sym;
-    int (*f)(va_list);
+	char *sym;
+	int (*f)(va_list);
 } conver_t;
 
 
