@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  * handle_binary - Converts a number from base 10 to binary.
