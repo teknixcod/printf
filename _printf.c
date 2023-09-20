@@ -10,8 +10,8 @@
  */
 int _printf(const char *format, ...)
 {
-    int printed_chars;
-    conver_t f_list[] = {
+	int printed_chars;
+	conver_t f_list[] = {
         {"%", percent_func},
         {"d", int_function},
         {"i", int_function},
