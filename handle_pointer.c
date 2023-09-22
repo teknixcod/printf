@@ -1,31 +1,32 @@
 #include "main.h"
 
 /**
- * pointer_handler - Handles the %p conversion specifier
- * @args: The va_list containing the argument to be printed (a pointer)
- *
- * Return: The number of characters printed
+ * pointer_handler - Handles conversion specifier for: p
+ * @val: arguments.
+ * Return: counter.
  */
 
-#include "main.h"
-
-int pointer_handler(va_list args)
+int pointer_handler(va_list val)
 {
-	unsigned long int address;
-	char *hex_address;
-	int printed_chars = 0;
+        void *p;
+        char *s = "(nil)";
+        long int a;
+        int b;
+        int i;
 
-	address = (unsigned long int)va_arg(args, void *);
+        p = va_arg(val, void*);
+        if (p == NULL)
+        {
+                for (i = 0; s[i] != '\0'; i++)
+                {
+                        _putchar(s[i]);
+                }
+                return (i);
+        }
 
-	hex_address = convert(address, 16, 1);
-
-	if (!hex_address)
-		return (-1);
-
-	printed_chars += _puts("0x");
-	printed_chars += _puts(hex_address);
-
-	free(hex_address);
-
-	return (printed_chars);
+        a = (unsigned long int)p;
+        _putchar('0');
+        _putchar('x');
+        b = hexadecimal_handler(a);
+        return (b + 2);
 }
