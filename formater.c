@@ -9,7 +9,7 @@
  * Return: A total count of the characters printed.
  */
 
-int format_reciever(const char *format, conver_t f_list[], va_list arg_list)
+int formater(const char *format, conver_t f_list[], va_list arg_list)
 {
 	int y, z, r_val, printed_chars;
 
