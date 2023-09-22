@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * pointer_handler - prints an hexadecimal pointer number.
+ * pointer_handler - handles pointer specifier using hexadecimal_handle funct.
  * @val: arguments.
  * Return: counter.
  */
