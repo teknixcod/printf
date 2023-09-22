@@ -24,21 +24,21 @@ typedef struct convert
 
 int _printf(const char *format, ...);
 int _putchar(char c);
-int format_function_handler(const char *format, conver_t f_list[],
-				va_list arg_list);
+int format_receiver(const char *format, conver_t f_list[], va_list arg_list);
 int percent_func(va_list args);
 int int_function(va_list args);
 int char_function(va_list args);
 int handle_string(va_list args);
 int handle_binary(va_list args);
 int func_unsigned_int(va_list args);
-int print_octal(va_list args);
-int print_hex(va_list args);
-int print_HEX(va_list args);
-int print_String(va_list args);
-int print_pointer(va_list args);
-int print_rev(va_list args);
-int print_rot13(va_list args);
+int octa_handler(va_list args);
+int hex_handler(va_list args);
+int HEX_handler(va_list args);
+int String_handler(va_list args);
+int pointer_handler(va_list args);
+int rev_handler(va_list args);
+int rot13_handler(va_list args);
+
 int num_function(va_list args);
 unsigned int base_len(unsigned int number, int baselen);
 char *rev_string(char *str);
