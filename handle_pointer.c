@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * pointer_handler - handles pointer specifier using hexadecimal_handle funct.
+ * pointer_handler - Handles conversion specifier for: p
  * @val: arguments.
  * Return: counter.
  */
