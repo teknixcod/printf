@@ -1,32 +1,20 @@
 #include "main.h"
 
 /**
- * pointer_handler - Handles conversion specifier for: p
- * @val: arguments.
- * Return: counter.
+ *pointer_handler - Handles the 'p' conversion specifier
+ *@args: The va_list containing the argument (a pointer)
+ *
+ *Return: The number of characters printed
  */
-
-int pointer_handler(va_list val)
+int pointer_handler(va_list args)
 {
-	void *p;
-	char *s = "(nil)";
-	long int a;
-	int b;
-	int i;
+	unsigned long int ptr = (unsigned long int)va_arg(args, void *);
 
-	p = va_arg(val, void*);
-	if (p == NULL)
-	{
-		for (i = 0; s[i] != '\0'; i++)
-		{
-			_putchar(s[i]);
-		}
-		return (i);
-	}
+	if (ptr == 0)
+		return (_printf("(nil)"));
 
-	a = (unsigned long int)p;
 	_putchar('0');
 	_putchar('x');
-	b = hexadecimal_handler(a);
-	return (b + 2);
+	return (hexadecimal_handler(ptr) + 2);
 }
+
